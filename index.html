@@ -3,16 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello</title>
+    <title>Molang Dev Previews</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="hero">
-      <p class="hero__eyebrow">GitHub Pages</p>
-      <h1 class="hero__title">Hello</h1>
-      <p class="hero__description">
-        This page is served from molang-dev.github.io.
-      </p>
+    <main class="page-shell">
+      <header class="hero">
+        <h1 class="hero__title">Project Previews</h1>
+        <p class="hero__description">
+          Two open source previews: pretext-editor and block-mark.
+        </p>
+      </header>
+
+      <section class="project-grid">
+        <article class="project-card project-card--editor">
+          <p class="project-card__type">Editor</p>
+          <h2 class="project-card__title">pretext-editor</h2>
+          <p class="project-card__description">
+            A high-performance code editor with Canvas rendering, syntax
+            highlighting, and efficient editing workflows.
+          </p>
+          <div class="project-card__actions">
+            <a class="button button--primary" href="/pretext-editor/">Open Preview</a>
+            <a class="button button--secondary" href="https://github.com/molang-dev/pretext-editor">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--markdown">
+          <p class="project-card__type">Markdown</p>
+          <h2 class="project-card__title">block-mark</h2>
+          <p class="project-card__description">
+            A progressive Markdown parser with incremental updates and a plugin
+            architecture for preview rendering.
+          </p>
+          <div class="project-card__actions">
+            <a class="button button--primary" href="/block-mark/">Open Preview</a>
+            <a class="button button--secondary" href="https://github.com/molang-dev/block-mark">GitHub</a>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
