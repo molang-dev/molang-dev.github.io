@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  --page-background: linear-gradient(135deg, #f4f7fb 0%, #dfe9f3 100%);
+  --card-background: rgba(255, 255, 255, 0.88);
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --accent: #0f766e;
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background: var(--page-background);
+  color: var(--text-primary);
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.hero__eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 40px 56px 20px;
+  border-radius: 28px 28px 12px 12px;
+  background: var(--card-background);
+  box-shadow: var(--shadow);
+  font-size: clamp(3rem, 12vw, 6rem);
+  line-height: 1;
+}
+
+.hero__description {
+  margin: 16px 0 0;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
